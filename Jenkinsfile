@@ -7,4 +7,15 @@ pipeline {
             }
         }
     }
+    post {
+        success: {
+            echo 'I succeeded'
+        }
+        unstable {
+            echo 'I am unstable :/'
+        }
+        failure {
+            echo 'I failed :('
+        }
+    }
 }
