@@ -8,7 +8,7 @@ pipeline {
         }
     }
     post {
-        success: {
+        success {
             echo 'I succeeded'
         }
         unstable {
